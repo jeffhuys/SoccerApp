@@ -1,0 +1,18 @@
+<h2>Results list</h2>
+<p ng-if="!results || results.length == 0">No results found.</p>
+
+<results-list results="results"></results-list>
+
+<br>
+
+<h2>Add result</h2>
+<form>
+    <input type="text" size="8" ng-model="team1" placeholder="Team 1">
+    <input type="text" size="1" ng-model="score1">
+    :
+    <input type="text" size="1" ng-model="score2">
+    <input type="text" size="8" ng-model="team2" placeholder="Team 2">
+
+    <br>
+    <button ng-click="addResult(team1, team2, score1, score2)">Add result</button>
+</form>

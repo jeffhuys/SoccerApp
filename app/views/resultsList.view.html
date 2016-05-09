@@ -1,0 +1,22 @@
+<table border="1" ng-if="results.length > 0">
+    <tr>
+        <th>Team 1</th>
+        <th>Score 1</th>
+        <th>Score 2</th>
+        <th>Team 2</th>
+    </tr>
+    <tr ng-repeat="result in results track by $index" style="text-align: center;">
+        <td>
+            <a href="#/team/{{result.team1}}">
+                {{ result.team1 }}
+            </a>
+        </td>
+        <td>{{ result.score1 }}</td>
+        <td>{{ result.score2 }}</td>
+        <td>
+            <a href="#/team/{{result.team2}}">
+                {{ result.team2 }}
+            </a>
+        </td>
+    </tr>
+</table>

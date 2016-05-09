@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en" ng-app="DemoApp">
+    <head>
+        <!-- Dependencies -->
+        <script src="vendor/angular.js"></script>
+        <script src="vendor/angular-route.js"></script>
+        
+        <!-- 'Boot' script -->
+        <script src="app/app.js"></script>
+
+        <!-- Controllers -->
+        <script src="app/controllers/main.controller.js"></script>
+        <script src="app/controllers/team.controller.js"></script>
+
+        <!-- Directives -->
+        <script src="app/directives/resultsList.directive.js"></script>
+    </head>
+    <body>
+        <div ng-view>
+            <!-- HTML will be injected here -->
+        </div>
+    </body>
+</html>
